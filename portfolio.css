@@ -1,0 +1,13 @@
+.nav{
+    background-color: aqua;
+}
+.nav ul{
+    border: 2px solid green;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav ul li{
+
+    padding: 2vw;
+}
