@@ -152,11 +152,12 @@ grid-area: p3;
 }
 .btn a:hover{
     color: white;
-    background-color: black;
+    /* background-color: darkorange; */
     border: 7px none;
     padding: 12px;
     /* border-radius: 25px; */
     cursor:grab;
+    opacity: 1;
 
 }
 .git{
