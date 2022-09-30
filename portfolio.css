@@ -1,10 +1,10 @@
 body{
-    background-color: gray;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-size: 20px;
-    /* color: violet; */
+    z-index: 1;
+    /* color: black; */
 }
 a{
     text-decoration: none;
@@ -12,35 +12,34 @@ a{
 }
 /* NAVBAR */
 .nav{  
-    /* overflow: hidden; */
-    background-color: aqua;
+    background-color: rgb(205, 167, 167);
     width: 100vw;
     position: fixed;
     top: 0vh;
     left: 0vw;
-    opacity: 1;
-    z-index: 1.2;
+    z-index: 3;
 }
 .navul{
     list-style: none;
     text-decoration: none;
     display: flex;
     justify-content: center;
-    float: left;
+    align-items: center;
 }
 .navul li{
-    padding: 1vw;
+    padding: 0 3vw;
 }
 /* INTRODUCTION */
 #intro
 {
     top: 15vh;
-    /* border: 2px solid red; */
     display: grid;
     padding: 3vw;
     grid-column-start: 3;
     grid-template-columns: auto;
-    background-color: white;
+    z-index: 1;
+    background-color: #F8EDE3;
+    
 
 }
  #hi
@@ -49,81 +48,81 @@ a{
     font-size: 25px;
     display: flex;
     justify-content: center;
-    animation: heading 2s infinite;
+    font-weight: bold;
 } 
 .nameh{
     display: flex;
     justify-content: center;
+    font-family: 'Bebas Neue', cursive;
 }
 /* About */
 #About{
-    /* position: relative;
-    top: 20vh;
-    margin: 10vh; */
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: start; 
+    flex-direction: row;
     padding: 12px 12px 12px 12px;
     overflow-x: hidden;
-    position: relative;
-    top: 22vh;
+    z-index: 1;
+    background-color: #DFD3C3;
 }
-.image{
+.image img{
+    padding: 20vh 0 20vh;
     max-width: 20vw;
     max-height: 32vh;
-    position: relative;
-    left: 3vw;
 }
-.Text p{
-    color: white;
-    text-align: start;
-    
-}
-.Text h1{
-    position: relative;
-    left: 14vw;
-    bottom: 5vh;
-}
-/* .Text{
+.Text{
     display:flex;
     flex-direction: column; 
-} */
-/* .Text{
     font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    font-weight: 100;
-    text-align: center;
-    text-align: center;
+    text-align: start;
+    word-wrap: break-word;
+    position: relative;
+    left: 7vw;
+    bottom: 8vh;
+    max-width: 50vw;
+    padding: 20vh 0 20vh;
 }
+
 #About h1{
     position: relative;
-    bottom: 10vh;
-    left: 40vw;
-    color: rgb(156, 83, 83);
+    left: 25vw;
+    bottom: 5vh;
+    padding-top: 5vh;
     margin-bottom: 10vh;
-} */
+}
 /* SKILLS */
 #skills
 {
-    /* border: 2px solid green; */
-    padding: 2vw;
+    padding: 30vh 0 30vh;
+    z-index: 1;
+    background-color: #D0B8A8;
+}
+#skills h1{
     position: relative;
-    top: 20vh;
-    background-color: white;
-    width: 100vw;
-    margin-bottom: 21vh;
+    bottom: 20vh;
+}
+.m1{
+grid-area: p1;
+}
+.m2{
+grid-area: p2;
+}
+.m3{
+grid-area: p3;
 }
 .skillname
 {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid: 'p1 p2 p3';
     list-style: none;
 }
 /* CONTACT */
 #contact
 {
    display: flex;
-   background-color:aqua;
+   z-index: 1;
+   background-color: #7D6E83;
 }
 .handlesnav{
     list-style: none;
@@ -136,7 +135,7 @@ a{
 .center{
     position: relative;
     left: 45vw;
-    margin-bottom: 12vh
+    margin-bottom: 12vh;
 }
 .nav2{
     float: right;
@@ -151,15 +150,82 @@ a{
     display: inline-block;
     padding: 1vw;
 }
-/* UTILITY */
-.btn:hover{
-    color: white;
-    background-color: black;
-    border: 1px none;
-    border-radius: 25px;
-    cursor:grab;
-}
 .btn a:hover{
     color: white;
+    background-color: black;
+    border: 7px none;
+    padding: 12px;
+    /* border-radius: 25px; */
+    cursor:grab;
 
+}
+.git{
+    max-width: 47px;
+}
+.pk:hover{
+    position: relative;
+    bottom: 5px;
+    max-width: 45px;
+}
+
+/* -------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px ) {
+ .navul2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 22vh;
+    left: 17vw;
+ }
+ .handlesnav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 6vh;
+    left: 2vw;
+ }
+ #About h1{
+    position: relative;
+    left: 20vw;
+    bottom: 5vh;
+    padding-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+}
+@media only screen and (max-width: 770px) {
+ .skillname
+ {
+    grid: 'p1 p2 '
+           'p3 .';
+ }
+ .navul2{
+    left: 2vw;
+ }
+}
+@media only screen and (max-width: 600px) {
+ .skillname
+ {
+    grid: 'p1'
+          'p2'
+          'p3';
+ }
+ .navul2{
+    left: 0vw;
+ }
+ .center{
+    left: 45vw;
+ }
+}
+@media only screen and (max-width: 530px) {
+    .navul2{
+        display: none;
+
+    }
+    .center{
+        left:26vw;
+    }
+    #About h1{
+        left: 3vw;
+    }
 }
