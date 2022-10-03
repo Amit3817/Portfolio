@@ -6,49 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- NAVBAR -->
     <div class="nav">
         <ul class="navul">
-            <li>Intro</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Acheivement</li>
-            <li>Contact</li>
+            <li class="btn"><a href="#intro">Home</a></li>
+            <li class="btn"><a href="#About"> About</a></li>
+            <li class="btn"><a href="#skills"> Skills</a></li>
+            <li class="btn"><a href="#contact">Contact</a></li>
         </ul>
     </div>
-    <div class="intro">
-        <p id="hi">
-            Hey there, You are viewing the portfolio of <br> <h1 class="nameh">AMIT VERMA</h1>
+
+
+    <!-- INTRO -->
+    <div id="intro">
+        <p id="hi" class="heading">
+            Hey there, You are viewing the portfolio of <h1 class="nameh">AMIT VERMA</h1>
             <ul class="navul">
-            <li><a href="https://www.instagram.com/amitverma3817/" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a></li>
-           <li> <a href="https://github.com/Amit3817" target="_blank"><img src="https://img.icons8.com/glyph-neue/64/000000/github.png"/></a></li>
-        <li><a href="https://www.linkedin.com/in/amit-verma-993bab227/" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/linkedin-circled.png"/></a></li>
+            <li><a href="https://www.instagram.com/amitverma3817/" target="_blank"><img class="pk" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a></li>
+           <li> <a href="https://github.com/Amit3817"  target="_blank"><img class="git pk" src="https://img.icons8.com/glyph-neue/64/000000/github.png"/></a></li>
+        <li><a href="https://www.linkedin.com/in/amit-verma-993bab227/" target="_blank"><img class="pk" src="https://img.icons8.com/fluency/48/000000/linkedin-circled.png"/></a></li>
         </ul>
         </p>
     </div>
-    <div class="About">
-        <h1>About Me....</h1>
-        <p>
+
+    <!-- ABOUT -->
+    <div id="About">
+        <div class="image">
             <img src="Photo.jpeg" alt="">
-        </p><p class="Text">I am 2nd year student at AKG Engineering College Ghaziabad. <br> 
-            I am interested in making blockchain projects that will make technologies <br>
-           that will astonish whole world and make me write my career with a golden pen. <br>
-           I have done my 10th form Little Flower School Salempur. There only, in class 9th, I started learning JAVA. <br>
+           </div>
+        <div class="Text">
+        <h1 class="center2">About Me</h1>
+        <p> I am 2nd year student at AKG Engineering College Ghaziabad.
+            I am interested in making blockchain projects that will make technologies
+           that will astonish whole world and make me write my career with a golden pen.
+           I have done my 10th form Little Flower School Salempur. There only, in class 9th, I started learning JAVA.
            After that I moved to The Pillars Public School Gorakhpur for class 12th. Here I explored C++ and SQL.
         </p>
-   </div>
-    <div class="skills">
+    </div>
+
+</div>
+
+   <!-- SKILLS -->
+    <div id="skills">
         <h1 class="nameh" >
             Learnt Skills
         </h1>
         <ul class="skillname">
-            <li><img src="https://img.icons8.com/color/240/000000/c-plus-plus-logo.png"/></li>
-            <li><img src="https://img.icons8.com/color/240/000000/html-5--v1.png"/></li>
-            <li><img src="https://img.icons8.com/color/240/000000/css3.png"/></li>
+            <li class="m1"><img src="https://img.icons8.com/color/240/000000/c-plus-plus-logo.png"/></li>
+            <li class="m2"><img src="https://img.icons8.com/color/240/000000/html-5--v1.png"/></li>
+            <li class="m3"><img src="https://img.icons8.com/color/240/000000/css3.png"/></li>
         </ul>
     </div>
+    <!-- FOOTER -->
+    <footer id="contact">
+        <span class="handles">
+            <h1 class="center">CONTACT</h1>
+            <ul class="handlesnav">
+                <li><a href="https://www.instagram.com/amitverma3817/" target="_blank"><img class="pk" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a></li>
+               <li><a href="https://github.com/Amit3817" target="_blank"><img class="git pk" src="https://img.icons8.com/glyph-neue/64/000000/github.png"/></a></li>
+            <li><a href="https://www.linkedin.com/in/amit-verma-993bab227/" target="_blank"><img class="pk" src="https://img.icons8.com/fluency/48/000000/linkedin-circled.png"/></a></li>
+            <li><a href="mailto:Amitverma3817@google.com"><img class="pk" src="https://img.icons8.com/color/48/000000/gmail--v1.png"/></a></li>
+            </ul>
 
-    
+        </span>
+        <div class="nav2">
+            <ul class="navul2">
+                <li class="btn"><a href="#intro">Home</a></li>
+                <li class="btn"><a href="#About">About</a></li>
+                <li class="btn"><a href="#skills">Skills</a></li>
+                <li class="btn" ><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
